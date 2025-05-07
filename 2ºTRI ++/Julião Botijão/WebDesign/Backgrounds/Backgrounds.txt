@@ -1,0 +1,6 @@
+background-color - cor de fundo - "background-color: #ffffff"
+background-image - imagem de fundo - "background-image: url()"
+background-repeat - define a repetição - ".imgFundo(){backgroud-repeat: no repeat}"
+background-size - define o tamanho - "background-size: cover" ///ajusta a imagaem na tela
+background-attachment - define como a imagem reage ao movimento - " background-attachment: fixed"
+background-position - define a posição - "background-position: (center // top // bottom // left // right)" há como juntar ex: top left. 
