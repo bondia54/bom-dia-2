@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desvio Condicional</title>
 </head>
 <body>
-    
+    <h1>Desvio Condicional</h1>
+    <p>Observe a imagem:</p>
+    <img src="Capture.PNG" alt="Triângulo">
+    <br>
+    <h2>Indique quais das opções a seguir condiz com sua situação</h2>
+    <h10>(forma preguiçosa)</h10>
+    <br>
+    <h4>1 - Todos os lados são iguais</h4>
+    <h4>2 - Dois lados do seu triângulo são iguais</h4>
+    <h4>3 - Todos os lados são diferentes</h4>
+    <br>
+    <input type="text" id="Casos" placeholder="Indique seu caso">
+    <br>
+    <input type="button" value="Lado" onclick="Triangulo()">
+    <br>
+    <h3 id="resposta"></h3>
+    <br>
+    <br>
+    <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <br>
+
+
+    <h2>Informe os lados X, Y e Z</h2>
+    <br>
+    <input type="number" id="X" placeholder="Lado X">
+    <br>
+    <input type="number" id="Y" placeholder="Lado Y">
+    <br>
+    <input type="number" id="Z" placeholder="Lado Z">
+    <br>
+    <input type="button" value="Caso" onclick="Triângulo()">
+    <br>
+    <p id="resposta"></p>
+
+
+    <script src="js/script.js"></script>
 </body>
 </html>
