@@ -30,7 +30,7 @@ function Triângulo(){
         if (x == y && y == z) {
           resposta = "É um triângulo equilátero, seu animal!";
         } else if (x == y || x == z || y == z) {
-            resposta= "É um triângulo isósceles, seu burro!";
+            resposta= "É um triângulo isósceles, seu burro! ";
         } else {
             resposta= "É um triângulo escaleno, seu idiota!";
         }
@@ -38,5 +38,5 @@ function Triângulo(){
         resposta= "Essa porcaria não forma um triângulo, seu retardado!";
       }
 
-    document.getElementById("resposta").innerHTML = resposta;
+    document.getElementById("resposta2").innerHTML = resposta;
 }

@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.principal{
+    background-image: url(images.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.login {
+    position: absolute;
+    top: 25%;
+    left: 19%; 
+    transform: translate(-50%, -50%);
+    width: auto;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 2;
+    line-height: 40px;
+  }
+
+  input{
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+  }
+
+  button{
+    border-radius: 3px;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(90, 167, 255);
+  }
+
+  ::placeholder{
+    text-align: center;
+  }
