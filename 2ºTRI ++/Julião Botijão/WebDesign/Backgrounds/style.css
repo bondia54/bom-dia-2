@@ -1,13 +1,93 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Pra largura e padding não quebrarem o layout */
 }
 
-.IGOR{
-    background-image: url(transferir.png);
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Uma fonte mais agradável */
+    background-color: #f0f2f5; /* Um fundo mais suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Pra tela toda */
+}
+
+.page {
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    width: 90%; /* Largura responsiva */
+    max-width: 600px; /* Largura máxima */
+    border-radius: 10px;
+    overflow: hidden; /* Pra borda arredondada funcionar nos filhos */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Uma sombra leve */
+}
+
+.principal{
+    background-image: url(images.jfif);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: center; /* Centraliza a imagem */
     width: 100%;
-    height: 800vh;
+    height: 200px; /* Altura menor pra dar mais destaque ao login */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Uma sombra no texto da imagem */
+}
+
+.login {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    width: 100%; /* O login ocupa toda a largura disponível */
+    line-height: 30px; /* Espaçamento menor entre as linhas */
+}
+
+.login h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px; /* Mais espaço interno */
+    margin-bottom: 10px; /* Espaçamento entre os inputs */
+    width: 100%; /* Inputs ocupam toda a largura do login */
+    box-sizing: border-box; /* Pra padding não aumentar a largura */
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; /* Mais padding no botão */
+    background-color: #007bff; /* Uma cor mais chamativa */
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease; /* Uma transição suave no hover */
+    width: 100%; /* Botão ocupa toda a largura */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+::placeholder{
+    color: #999; /* Cor do placeholder mais suave */
+    text-align: left; /* Alinha o placeholder à esquerda */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    font-size: 0.8em;
 }
