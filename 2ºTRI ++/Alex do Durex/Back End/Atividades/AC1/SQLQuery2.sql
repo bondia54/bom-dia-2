@@ -82,7 +82,7 @@ create table Detalhes_Pedido( /*14*/
 )
 
 alter table Detalhes_Pedido /*15*/
-drop Id_Produto 
+drop column Id_Produto 
 go
 
 alter table Produtos /*16*/

@@ -8,17 +8,17 @@ function calcular(){
     }
     else {
         if(saldo <= 1300){
-            emprestimo = saldo + (0.2 * saldo);
+            emprestimo =(0.2 * saldo);
         } else if (saldo <= 3000){
-            emprestimo = saldo + (0.3 * saldo);
+            emprestimo =(0.3 * saldo);
         } else if (saldo <= 8000){
-            emprestimo = saldo + (0.45 * saldo);
+            emprestimo =(0.45 * saldo);
         } else if (saldo <= 10000){
-            emprestimo = saldo + (0.5 * saldo);
+            emprestimo =(0.5 * saldo);
         } else{
-            emprestimo = saldo + (0.6 * saldo);
+            emprestimo =(0.6 * saldo);
         }
-        resposta = `Seu empréstimo é de ${emprestimo.toFixed(2)}`;
+        resposta = `Seu empréstimo é de R$${emprestimo.toFixed(2)}`;
     }
    
     document.getElementById("resposta").innerHTML = resposta;

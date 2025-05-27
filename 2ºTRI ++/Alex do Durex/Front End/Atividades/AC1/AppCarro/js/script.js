@@ -1,27 +1,84 @@
 function calcular(){
-    let saldo = parseFloat(document.getElementById('Saldo').value);
-    let emprestimo = 0;
-    let resposta = "";
-
-    if (isNaN(saldo)) {
-        resposta = "Saldo inválido. Digite um número.";
-    } else if (saldo < 0) {
-        resposta = "Saldo negativo. Digite um valor positivo.";
+    tipoCarro = parseInt(document.getElementById('tipoCarro').value);
+    distancia = parseInt(document.getElementById('distancia').value);
+    diaSemana = parseInt(document.getElementById('diaSemana').value);
+    hora = parseInt(document.getElementById('hora').value);
+    valorFinal = 0;
+    switch (tipoCarro) {
+        case 1:
+            if(diaSemana == 2 || diaSemana == 3 || diaSemana == 4 || diaSemana == 5 || diaSemana == 6 && hora >= 6 && hora <= 10 || hora >= 17 && hora <= 20){
+                valor = distancia * 2.5
+                valor = valor + (valor * 0.15) ;
+            }else{
+                valor =  distancia * 2.5
+                valor = valor
+            }
+            if(hora >= 0 && hora <= 6){
+                valor = valor + (valor * 0.2)
+            } else{
+                valor = valor
+            }
+            if(diaSemana == 7 || diaSemana == 1 && hora >= 15 && hora <= 17){
+                valor = valor - (valor * 0.1)
+            } else{
+                valor = valor
+            }
+            if(distancia >= 100){
+                valor = valor + 50
+            }else{
+                valor = valor
+            }
+            break;
+        case 2:
+            if(diaSemana == 2 || diaSemana == 3 || diaSemana == 4 || diaSemana == 5 || diaSemana == 6 && hora >= 6 && hora <= 10 || hora >= 17 && hora <= 20){
+                valor = distancia * 4.5
+                valor2 = valor + (valor * 0.15) ;
+            }else{
+                valor = distancia * 4.5
+                valor2 = valor
+            }
+            if(hora >= 0 && hora <= 6){
+                valor = valor + (valor * 0.2)
+            } else{
+                valor = valor
+            }
+            if(diaSemana == 7 || diaSemana == 1 && hora >= 15 && hora <= 17){
+                valor = valor - (valor * 0.1)
+            } else{
+                valor = valor
+            }
+            if(distancia >= 100){
+                valor = valor + 50
+            }else{
+                valor = valor
+            }
+            break;
+        case 3:
+            if(diaSemana == 2 || diaSemana == 3 || diaSemana == 4 || diaSemana == 5 || diaSemana == 6 && hora >= 6 && hora <= 10 || hora >= 17 && hora <= 20){
+                valor = distancia * 7.8
+                valor2 = valor + (valor * 0.15) ;
+            }else{
+                valor = distancia * 7.8
+                valor2 = valor
+            }
+            if(hora >= 0 && hora <= 6){
+                valor = valor + (valor * 0.2)
+            } else{
+                valor = valor
+            }
+            if(diaSemana == 7 || diaSemana == 1 && hora >= 15 && hora <= 17){
+                valor = valor - (valor * 0.1)
+            } else{
+                valor = valor
+            }
+            if(distancia >= 100){
+                valor = valor + 50
+            }else{
+                valor = valor
+            }
+            break;
+        default:
+            break;
     }
-    else {
-        if(saldo <= 1300){
-            emprestimo = saldo + (0.2 * saldo);
-        } else if (saldo <= 3000){
-            emprestimo = saldo + (0.3 * saldo);
-        } else if (saldo <= 8000){
-            emprestimo = saldo + (0.45 * saldo);
-        } else if (saldo <= 10000){
-            emprestimo = saldo + (0.5 * saldo);
-        } else{
-            emprestimo = saldo + (0.6 * saldo);
-        }
-        resposta = `Seu empréstimo é de ${emprestimo.toFixed(2)}`;
-    }
-   
-    document.getElementById("resposta").innerHTML = resposta;
+    document.getElementById("resposta").innerHTML = `o valor da sua viagem será de R$${valor}`;
 }

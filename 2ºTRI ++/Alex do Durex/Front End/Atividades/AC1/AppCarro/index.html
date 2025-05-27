@@ -7,7 +7,32 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-    <h1></h1>
-    
+    <h1>Calcular o preço da viagem</h1>
+    <h2>-- qual é o tipo do carro?</h2>
+    <p>1 - comum</p>
+    <p>2 - Premium</p>
+    <p>3 - VIP</p>
+    <input type="number" id="tipoCarro" placeholder="digite o tipo do carro">
+
+    <h2>-- qual é a distância(km) da viagem?</h2>
+    <input type="number" id="distancia" placeholder="digite a distância da viagem">
+
+    <h2>-- Que dia na semana é a viagem?</h2>
+    <p>1 - Domingo</p>
+    <p>2 - Segunda-feira</p>
+    <p>3 - Terça-feira</p>
+    <p>4 - Quarta-feira</p>
+    <p>5 - Quinta-feira</p>
+    <p>6 - Sexta-feira</p>
+    <p>7 - Sábado</p>
+    <input type="number" id="diaSemana" placeholder="digite o dia da semana">
+
+    <h2>-- Qual é a hora(24h) da viagem?(apenas a parte inteira)</h2>
+    <input type="number" id="hora" placeholder="digite a hora da viagem">
+    <br>
+    <br>
+    <input type="button" value="Calcular" onclick="calcular()">
+
+    <p id="resposta"></p>
 </body>
 </html>
