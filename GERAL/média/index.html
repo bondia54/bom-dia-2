@@ -8,7 +8,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    
     <h1>Média Trimestral (por matéria)</h1>
+    <div class="wave-group">
+        <input required="" type="text" class="input">
+        <span class="bar"></span>
+        <label class="label">
+          <span class="label-char" style="--index: 0">N</span>
+          <span class="label-char" style="--index: 1">o</span>
+          <span class="label-char" style="--index: 2">m</span>
+          <span class="label-char" style="--index: 3">e</span>
+        </label>
+        <br>
+    </div>
     <input type="number" id="AGH" placeholder="digite sua AGH">
     <br>
     <input type="number" id="AC" placeholder="digite sua AC">
@@ -16,7 +29,7 @@
     <input type="number" id="AT" placeholder="digite sua AT">
     <br>
     <br>
-    <input type="button" value="descubra sua média" onclick="media()">
+    <input type="button" value="média" onclick="media()">
     <br>
     <br>
     <p id="resposta"></p>
